@@ -1,0 +1,452 @@
+/* Checkout Page Styles */
+.checkout-section {
+    background: linear-gradient(135deg, #8B4513 0%, #A0522D 50%, #CD853F 100%);
+    min-height: 100vh;
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.checkout-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+/* Back Link */
+.back-link {
+    padding: 20px 40px 0;
+}
+
+.back-to-cart {
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s ease;
+}
+
+.back-to-cart:hover {
+    color: #333;
+}
+
+.arrow {
+    font-size: 16px;
+}
+
+/* Checkout Header */
+.checkout-header {
+    padding: 20px 40px;
+    border-bottom: 1px solid #eee;
+}
+
+.checkout-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 10px 0;
+}
+
+.checkout-description {
+    color: #666;
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Checkout Content */
+.checkout-content {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 40px;
+    padding: 40px;
+}
+
+/* Form Section */
+.checkout-form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.form-section {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #e0e0e0;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 25px 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    background: white;
+    transition: border-color 0.3s ease;
+}
+
+.input-group:focus-within {
+    border-color: #4CAF50;
+}
+
+.input-icon {
+    padding: 12px 15px;
+    color: #666;
+    font-size: 16px;
+}
+
+.form-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 12px 15px;
+    font-size: 16px;
+    background: transparent;
+}
+
+.country-select {
+    border: none;
+    outline: none;
+    padding: 12px 10px;
+    background: transparent;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Delivery Options */
+.delivery-options {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.delivery-option {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.delivery-option:hover {
+    border-color: #4CAF50;
+    transform: translateY(-2px);
+}
+
+.delivery-option.selected {
+    background: #4CAF50;
+    border-color: #4CAF50;
+    color: white;
+}
+
+.option-icon {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.option-text {
+    font-weight: 500;
+}
+
+/* Payment Options */
+.payment-options {
+    display: flex;
+    gap: 15px;
+}
+
+.payment-option {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.payment-option:hover {
+    border-color: #4CAF50;
+    transform: translateY(-2px);
+}
+
+.payment-option.selected {
+    background: #4CAF50;
+    border-color: #4CAF50;
+    color: white;
+}
+
+/* Order Summary Section */
+.order-summary-section {
+    position: sticky;
+    top: 20px;
+}
+
+.summary-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border: 1px solid #e0e0e0;
+}
+
+/* Credit Card */
+.credit-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 25px;
+    position: relative;
+    color: white;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-chip {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 24px;
+}
+
+.card-wifi {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+}
+
+.card-details {
+    margin-top: auto;
+}
+
+.card-expiry {
+    font-size: 12px;
+    opacity: 0.8;
+    margin-bottom: 5px;
+}
+
+.card-number {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.card-name {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.manage-cards {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 25px;
+    transition: color 0.3s ease;
+}
+
+.manage-cards:hover {
+    color: #4CAF50;
+}
+
+/* Order Summary */
+.order-summary {
+    margin-bottom: 25px;
+}
+
+.summary-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 20px 0;
+}
+
+.summary-details {
+    margin-bottom: 20px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 14px;
+}
+
+.summary-row:last-child {
+    border-bottom: none;
+}
+
+.summary-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    border-top: 2px solid #e0e0e0;
+}
+
+/* Pay Button */
+.pay-button {
+    width: 100%;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pay-button:hover {
+    background: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .checkout-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 20px;
+    }
+    
+    .checkout-container {
+        margin: 20px;
+        border-radius: 15px;
+    }
+    
+    .checkout-header {
+        padding: 20px;
+    }
+    
+    .checkout-title {
+        font-size: 2rem;
+    }
+    
+    .form-section {
+        padding: 20px;
+    }
+    
+    .delivery-options,
+    .payment-options {
+        flex-direction: column;
+    }
+    
+    .delivery-option,
+    .payment-option {
+        flex-direction: row;
+        justify-content: flex-start;
+        text-align: left;
+    }
+    
+    .option-icon {
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+}
+
+/* 3D Card Effects */
+.summary-card {
+    transform: perspective(1000px) rotateX(5deg);
+    transition: transform 0.3s ease;
+}
+
+.summary-card:hover {
+    transform: perspective(1000px) rotateX(0deg) translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.credit-card {
+    transform: perspective(1000px) rotateY(-5deg);
+    transition: transform 0.3s ease;
+}
+
+.credit-card:hover {
+    transform: perspective(1000px) rotateY(0deg);
+}
+
+/* Animation for form sections */
+.form-section {
+    animation: slideInUp 0.6s ease-out;
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Loading state for pay button */
+.pay-button.loading {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.pay-button.loading::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

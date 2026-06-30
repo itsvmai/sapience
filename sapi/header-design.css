@@ -1,0 +1,259 @@
+/* Header Design - Exact match to specifications */
+
+/* Header container styling */
+.u-header {
+    background: #FDF3E7 !important; /* Light cream background */
+    border: none !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+}
+
+/* Header sheet container */
+.u-header .u-sheet-1 {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 25px 40px !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    background: transparent !important;
+}
+
+/* Logo styling */
+.u-header .u-image-1 {
+    flex-shrink: 0 !important;
+    margin-right: 40px !important;
+}
+
+.u-header .u-logo-image-1 {
+    height: auto !important;
+    max-height: 70px !important;
+    width: auto !important;
+}
+
+/* Logo text styling */
+.u-header .u-logo-text {
+    color: #5E7042 !important; /* Green color for SAPIENCE */
+    font-family: 'Arial', sans-serif !important;
+    font-weight: bold !important;
+    font-size: 28px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+}
+
+/* Cup icon for letter I */
+.u-header .u-logo-cup {
+    display: inline-block !important;
+    width: 20px !important;
+    height: 20px !important;
+    background: #9C6B3C !important; /* Brown cup */
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40% !important;
+    position: relative !important;
+    margin: 0 2px !important;
+}
+
+.u-header .u-logo-cup::after {
+    content: '🍃' !important;
+    position: absolute !important;
+    top: -5px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    font-size: 12px !important;
+}
+
+/* Tagline styling */
+.u-header .u-logo-tagline {
+    color: #9C6B3C !important; /* Dark brown for tagline */
+    font-family: 'Georgia', serif !important;
+    font-style: italic !important;
+    font-size: 16px !important;
+    margin-top: 5px !important;
+    text-align: center !important;
+}
+
+/* Tagline lines */
+.u-header .u-logo-tagline::before,
+.u-header .u-logo-tagline::after {
+    content: '' !important;
+    display: block !important;
+    width: 100% !important;
+    height: 1px !important;
+    background: #9C6B3C !important; /* Dark brown lines */
+    margin: 3px 0 !important;
+}
+
+/* Navigation menu styling */
+.u-header .u-menu-1 {
+    flex: 1 !important;
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+}
+
+.u-header .u-nav-container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+}
+
+.u-header .u-nav-1 {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+}
+
+.u-header .u-nav-item {
+    margin: 0 20px !important;
+}
+
+/* Navigation links styling */
+.u-header .u-nav-link {
+    color: #C89065 !important; /* Light brown color */
+    font-family: 'Arial', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    text-decoration: none !important;
+    padding: 8px 0 !important;
+    transition: color 0.3s ease !important;
+    position: relative !important;
+}
+
+/* Active/current page link styling (Products should be bold) */
+.u-header .u-nav-link[aria-current="page"],
+.u-header .u-nav-link[href*="Products"] {
+    color: #C89065 !important; /* Light brown color */
+    font-weight: bold !important;
+}
+
+.u-header .u-nav-link:hover {
+    color: #9C6B3C !important; /* Darker brown on hover */
+}
+
+/* Buttons styling */
+.u-header .u-btn-1,
+.u-header .u-btn-2 {
+    background: #9C6B3C !important; /* Medium brown background */
+    color: white !important;
+    border: 1px solid #9C6B3C !important; /* Medium brown border */
+    border-radius: 3px !important;
+    padding: 12px 24px !important;
+    font-family: 'Arial', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    transition: all 0.3s ease !important;
+    margin-left: 15px !important;
+    min-width: 90px !important;
+    text-align: center !important;
+    box-shadow: none !important;
+}
+
+.u-header .u-btn-1:hover,
+.u-header .u-btn-2:hover {
+    background: #8B5A3C !important; /* Slightly darker brown on hover */
+    border-color: #8B5A3C !important;
+    transform: translateY(-1px) !important;
+}
+
+/* Button spacing */
+.u-header .u-btn-1 {
+    margin-right: 10px !important;
+}
+
+/* Hide hamburger menu on desktop */
+.u-header .menu-collapse {
+    display: none !important;
+}
+
+/* Mobile responsive design */
+@media (max-width: 991px) {
+    .u-header .u-sheet-1 {
+        padding: 20px 25px !important;
+        flex-wrap: wrap !important;
+    }
+    
+    .u-header .u-image-1 {
+        margin-right: 20px !important;
+        margin-bottom: 15px !important;
+    }
+    
+    .u-header .u-menu-1 {
+        order: 3 !important;
+        width: 100% !important;
+        justify-content: center !important;
+    }
+    
+    .u-header .u-btn-1,
+    .u-header .u-btn-2 {
+        order: 2 !important;
+        margin-left: 0 !important;
+        margin-bottom: 15px !important;
+        font-size: 13px !important;
+        padding: 10px 20px !important;
+    }
+    
+    .u-header .menu-collapse {
+        display: flex !important;
+        order: 1 !important;
+        align-self: flex-end !important;
+        margin-bottom: 15px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .u-header .u-sheet-1 {
+        padding: 15px 20px !important;
+    }
+    
+    .u-header .u-nav-container {
+        display: none !important;
+    }
+    
+    .u-header .u-btn-1,
+    .u-header .u-btn-2 {
+        font-size: 12px !important;
+        padding: 8px 16px !important;
+        min-width: 80px !important;
+    }
+}
+
+/* Ensure consistent spacing and alignment */
+.u-header * {
+    box-sizing: border-box !important;
+}
+
+/* Fix any overlapping issues */
+.u-header .u-image-1,
+.u-header .u-menu-1,
+.u-header .u-btn-1,
+.u-header .u-btn-2 {
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+/* Logo container for better organization */
+.u-header .u-logo-container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+}
+
+/* Ensure proper spacing between elements */
+.u-header .u-nav-item:last-child {
+    margin-right: 0 !important;
+}
+
+/* Clean layout with proper spacing */
+.u-header .u-sheet-1 > * {
+    margin: 0 !important;
+}
+
+/* Ensure navigation is properly aligned to the right */
+.u-header .u-nav-1 {
+    margin-left: auto !important;
+}

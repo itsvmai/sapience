@@ -1,0 +1,196 @@
+/* Header Layout Fix - Ensure all pages match About-Us.html exactly */
+
+/* Fix header container alignment */
+.u-header .u-sheet-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 80px;
+}
+
+/* Fix logo positioning */
+.u-header .u-image-1 {
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+/* Fix navigation positioning */
+.u-header .u-menu-1 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Fix navigation container */
+.u-header .u-nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Fix navigation list */
+.u-header .u-nav-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fix navigation items */
+.u-header .u-nav-item {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+/* Fix navigation links */
+.u-header .u-nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+/* Fix buttons positioning */
+.u-header .u-btn-1,
+.u-header .u-btn-2 {
+    flex-shrink: 0;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 80px;
+    height: 40px;
+    border-radius: 4px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Fix button spacing */
+.u-header .u-btn-1 {
+    margin-right: 10px;
+}
+
+/* Fix hamburger menu positioning */
+.u-header .menu-collapse {
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive fixes */
+@media (max-width: 991px) {
+    .u-header .u-sheet-1 {
+        flex-direction: column;
+        align-items: stretch;
+        min-height: auto;
+    }
+    
+    .u-header .u-image-1 {
+        margin-right: 0;
+        margin-bottom: 10px;
+        align-self: center;
+    }
+    
+    .u-header .u-menu-1 {
+        order: 3;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    
+    .u-header .u-btn-1,
+    .u-header .u-btn-2 {
+        order: 2;
+        margin-left: 0;
+        margin-bottom: 10px;
+        align-self: center;
+    }
+    
+    .u-header .menu-collapse {
+        display: flex;
+        order: 1;
+        align-self: flex-end;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .u-header .u-sheet-1 {
+        padding: 15px;
+    }
+    
+    .u-header .u-nav-container {
+        display: none;
+    }
+    
+    .u-header .u-btn-1,
+    .u-header .u-btn-2 {
+        font-size: 14px;
+        min-width: 70px;
+        height: 35px;
+    }
+}
+
+/* Ensure consistent spacing */
+.u-header .u-nav-1 li {
+    margin: 0 5px;
+}
+
+/* Fix dropdown positioning */
+.u-header .u-nav-popup {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    min-width: 200px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
+.u-header .u-nav-item:hover .u-nav-popup {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Fix mobile menu */
+.u-header .u-nav-container-collapse {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background: #333;
+    z-index: 9999;
+    transition: right 0.3s ease;
+}
+
+.u-header .u-nav-container-collapse.active {
+    right: 0;
+}
+
+/* Ensure all elements are properly aligned */
+.u-header * {
+    box-sizing: border-box;
+}
+
+/* Fix any overlapping issues */
+.u-header .u-image-1,
+.u-header .u-menu-1,
+.u-header .u-btn-1,
+.u-header .u-btn-2 {
+    position: relative;
+    z-index: 1;
+}

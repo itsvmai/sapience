@@ -1,0 +1,25 @@
+{
+  "name": "sapience-coffee-website",
+  "version": "1.0.0",
+  "description": "Sapience Coffee Shop Website",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'No build step required'",
+    "start": "echo 'Static website - no server needed'"
+  },
+  "keywords": [
+    "coffee",
+    "website",
+    "ecommerce",
+    "static"
+  ],
+  "author": "Sapience Coffee",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/sapience-coffee.git"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
